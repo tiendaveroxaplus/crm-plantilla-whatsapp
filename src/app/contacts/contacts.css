@@ -1,0 +1,4 @@
+.table-actions select{border:1px solid #e1d6cb;border-radius:7px;padding:9px 11px;background:#fff;color:#685440;font:inherit;font-size:13px}
+.contact-modal .send-error{font-size:12px;line-height:1.4}
+.contact-modal .primary-button:disabled{opacity:.55;cursor:not-allowed}
+@media(max-width:600px){.table-actions{align-items:center}.table-actions input{width:min(60vw,390px)}.table-actions select{max-width:35vw}}

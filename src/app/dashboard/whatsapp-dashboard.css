@@ -1,0 +1,43 @@
+.period-control{min-width:min(100%,475px);padding:6px;border:1px solid #ece3db;border-radius:15px;background:#fff;box-shadow:0 8px 22px #3d41360b}
+.period-options{display:flex;gap:3px;flex-wrap:wrap}
+.period-options button{border:0;border-radius:10px;padding:9px 10px;background:transparent;color:#806951;font:inherit;font-size:12px;font-weight:750;cursor:pointer}
+.period-options button:hover{background:#fff4f0;color:#c25b40}
+.period-options button.active{background:#4f5547;color:#fff;box-shadow:0 2px 7px #474d4030}
+.period-custom{display:flex;gap:9px;padding:9px 7px 4px;border-top:1px solid #f7f3ee;margin-top:7px}
+.period-custom label{display:grid;gap:5px;flex:1;color:#8e7861;font-size:11px;font-weight:750}
+.period-custom input{width:100%;min-width:0;border:1px solid #e7dcd0;border-radius:8px;padding:8px;background:#fff;font:inherit;color:#3e4338}
+.whatsapp-overview{margin-bottom:24px;padding:22px;border:1px solid #fee2d8;border-radius:19px;background:linear-gradient(135deg,#fff4f0 0%,#fff4f0 57%,#eff9f5 100%);box-shadow:0 12px 30px #41463a10}
+.whatsapp-overview-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:18px}
+.whatsapp-overview-head h2{margin:0;color:#363b31;font-size:23px;letter-spacing:-.025em}
+.whatsapp-overview-head span{display:block;margin-top:5px;color:#8b7156;font-size:13px}
+.whatsapp-overview-head .wa-month-badge{display:inline-flex;align-items:center;white-space:nowrap;margin:0;padding:8px 11px;border:1px solid #fee7df;border-radius:99px;background:#fff;color:#4e5446;font-size:11px;font-weight:800}
+.wa-kpi-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px}
+.wa-kpi{min-width:0;border:1px solid #f1eae3;border-radius:13px;background:#fff;padding:16px;box-shadow:0 5px 18px #3e43380a}
+.wa-kpi>span,.wa-kpi>div>span{display:block;color:#82684e;font-size:12px;font-weight:750}
+.wa-kpi b{display:block;margin:7px 0;color:#3b4035;font-size:26px;line-height:1.1}
+.wa-kpi small{display:block;color:#947a61;font-size:11px;line-height:1.5}
+.wa-quota b{font-size:23px}
+.wa-progress{height:9px;overflow:hidden;border-radius:99px;background:#f3ede7;margin:12px 0 8px}
+.wa-progress i{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,#20b57c,#c25b40);transition:width .25s}
+.wa-quota-alert{margin-top:12px;border:1px solid #f5d28b;border-radius:10px;background:#fff8e8;color:#845711;padding:10px 12px;font-size:12px;font-weight:700;line-height:1.45}
+.wa-quota-alert.is-exhausted{border-color:#fecaca;background:#fff2f2;color:#9f3333}
+.wa-detail-grid{display:grid;grid-template-columns:minmax(220px,.8fr) minmax(0,1.2fr);gap:12px;margin-top:12px}
+.wa-detail{min-width:0;border:1px solid #fff1ed;border-radius:13px;background:#fff;padding:16px}
+.wa-detail h3{font-size:14px;margin:0;color:#3b4035}
+.wa-detail>p{color:#937a62;font-size:11px;line-height:1.5;margin:5px 0 12px}
+.wa-source-row{display:flex;justify-content:space-between;align-items:center;gap:10px;border-top:1px solid #f7f3ee;padding:10px 0;font-size:12px;color:#4c5244}
+.wa-source-row b{color:#c25b40;font-size:16px}
+.wa-detail .wa-footnote{margin:10px 0 0}
+.wa-window-list{max-height:260px;overflow:auto}
+.wa-window-list a{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0;border-top:1px solid #f7f3ee;text-decoration:none;color:#3f4439}
+.wa-window-list a:hover b{text-decoration:underline}
+.wa-window-list a>span{min-width:0}
+.wa-window-list b,.wa-window-list small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.wa-window-list b{font-size:12px}.wa-window-list small{color:#9d856e;font-size:10px;margin-top:3px}
+.wa-window-list em{font-style:normal;text-align:right;white-space:nowrap;color:#188265;font-size:11px;font-weight:750}
+.wa-window-list em small{font-weight:500}
+.wa-empty{padding:14px;border-radius:9px;background:#faf8f6}
+.whatsapp-overview .wa-disclaimer{margin:13px 2px 0;color:#8e765d;font-size:11px;line-height:1.5}
+@media(max-width:1150px){.wa-kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.dashboard .page-head{display:block}.period-control{margin-top:18px}}
+@media(max-width:700px){.whatsapp-overview{padding:16px}.whatsapp-overview-head{display:block}.whatsapp-overview-head .wa-month-badge{margin-top:12px}.wa-detail-grid{grid-template-columns:1fr}.period-control{min-width:0}.period-options button{padding:8px;font-size:11px}}
+@media(max-width:480px){.wa-kpi-grid{grid-template-columns:1fr}.period-custom{display:block}.period-custom label{margin-top:8px}}

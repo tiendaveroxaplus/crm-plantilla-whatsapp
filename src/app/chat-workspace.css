@@ -1,0 +1,85 @@
+.crm-workspace{height:100dvh;min-height:0;display:flex;flex-direction:column;overflow:hidden}
+.crm-workspace .topbar,.crm-workspace .metrics{flex:none}
+.crm-workspace .crm-grid{flex:1;min-height:0;height:auto;margin-bottom:16px;grid-template-columns:minmax(250px,324px) minmax(350px,1fr) minmax(270px,310px)}
+.crm-workspace .inbox,.crm-workspace .chat{min-height:0;overflow:hidden}
+.crm-workspace .inbox{display:flex;flex-direction:column}
+.crm-workspace .conversation-list{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.inbox-search{display:block;width:calc(100% - 24px);margin:0 12px 10px;border:1px solid #e2d6ca;border-radius:8px;padding:9px;font:inherit;font-size:13px}
+.inbox-empty{padding:18px;color:#8e7861;font-size:13px}
+.origin-filters{display:flex;gap:5px;overflow-x:auto;padding:0 11px 10px;scrollbar-width:thin}
+.origin-filters button{white-space:nowrap;border:1px solid #eee6de;border-radius:99px;background:#fff;color:#8b7054;padding:5px 9px;font-size:11px;font-weight:700;cursor:pointer}
+.origin-filters button.active{background:#e4f3ee;border-color:#a8ddca;color:#087b56}
+.crm-workspace .messages{min-height:0;overflow-y:auto;overscroll-behavior:contain;scrollbar-gutter:stable}
+.crm-workspace .chat{position:relative}
+.crm-workspace .chat-header{gap:10px;flex:none}
+.crm-workspace .chat-header>div:first-of-type{min-width:0;flex:1}
+.crm-workspace .chat-header h2,.crm-workspace .chat-header p{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.crm-workspace .chat-state,.crm-workspace .composer{flex:none}
+.crm-workspace .contact-panel{min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.chat-back,.contact-toggle,.contact-close{display:none}
+.new-message-button{position:absolute;right:24px;bottom:83px;z-index:2;border:1px solid #fedbcf;border-radius:99px;background:#fff4f0;color:#c25b40;padding:8px 13px;font-weight:750;box-shadow:0 4px 14px #363a3120;cursor:pointer}
+.contact-panel .details-head>div{display:flex;gap:8px}
+.contact-attribution{padding:13px 0;border-bottom:1px solid var(--line)}
+.contact-attribution p{margin:0 0 6px;font-size:11px;letter-spacing:.09em;font-weight:800;color:#957f68}
+.contact-attribution strong{display:block;font-size:13px;color:#4e5446}
+.contact-attribution small,.contact-attribution span{display:block;font-size:11px;color:#8e7861;line-height:1.5;margin-top:4px}
+.contact-attribution .entry-window-active{color:#087b56;font-weight:750}
+.contact-panel button,.contact-panel input,.contact-panel select{font:inherit}
+.contact-panel button{cursor:pointer}
+.contact-panel button:disabled{opacity:.5;cursor:not-allowed}
+.contact-edit,.contact-form,.sale-form{border:1px solid #ede4db;border-radius:10px;background:#fff4f0;padding:12px;margin:12px 0}
+.contact-panel label{display:block;font-size:12px;font-weight:700;color:#7c664f;margin:9px 0}
+.contact-panel label input,.contact-panel label select,.tag-add-form input{display:block;width:100%;margin-top:5px;padding:8px;border:1px solid #e2d6ca;border-radius:7px;background:#fff;color:#3f4439;min-width:0}
+.contact-edit>button,.contact-form>button,.sale-form-actions>button:last-child,.tag-add-form button{border:0;border-radius:7px;padding:8px 10px;background:#c25b40;color:#fff;font-size:12px;font-weight:700}
+.contact-panel .stage{max-width:150px;white-space:normal}
+.owner-actions{padding:0 0 13px;border-bottom:1px solid var(--line)}
+.owner-actions button,.sale-card>button{border:0;background:transparent;color:#c25b40;font-size:12px;font-weight:750;padding:0}
+.contact-panel .tag-block{padding:14px 0}
+.tag-block .tag-pill{display:inline-block;border:0;background:#fff4f0;color:#c25b40;border-radius:20px;padding:6px 9px;margin:0 5px 5px 0;font-size:12px}
+.tag-add-form{display:flex;gap:5px;margin-top:7px}
+.tag-add-form input{margin:0;flex:1}
+.contact-mini-row{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;border-bottom:1px solid #f7f3ee;padding:10px 0;font-size:12px}
+.contact-mini-row b,.contact-mini-row span{display:block}
+.contact-mini-row span{color:#766350;line-height:1.4;margin-top:3px}
+.contact-mini-row button{border:0;background:transparent;color:#c25b40;font-size:11px;font-weight:700}
+.contact-sales{border-top:1px solid var(--line);margin-top:15px;padding-top:15px}
+.contact-section-head{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.contact-section-head h3{font-size:14px;margin:0}
+.contact-section-head button{border:0;background:transparent;color:#c25b40;font-weight:750;font-size:12px}
+.contact-sales>p{font-size:12px;line-height:1.45;color:#8e7861}
+.sale-card{border:1px solid #ede4db;border-radius:9px;padding:10px;margin:8px 0;background:#fff}
+.sale-card>div{display:flex;justify-content:space-between;gap:8px;font-size:12px}
+.sale-card strong{font-size:15px;color:#087b56}
+.sale-card small{display:block;font-size:11px;color:#8e7861;line-height:1.4;margin:4px 0}
+.sale-form h4{margin:0 0 10px;font-size:14px}
+.sale-item{border-top:1px solid #ede4db;padding:9px 0}
+.sale-item>div{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.sale-form .subtle{border:0;background:transparent;color:#c25b40;font-size:12px;font-weight:700;padding:5px 0}
+.sale-total{font-size:13px;border-top:1px solid #ede4db;padding-top:10px;display:flex;justify-content:space-between}
+.sale-form-actions{display:flex;justify-content:flex-end;gap:7px;margin-top:12px}
+.sale-form-actions>button:first-child{border:1px solid #e2d6ca;border-radius:7px;background:#fff;padding:7px 10px;font-size:12px}
+.contact-feedback{font-size:12px;line-height:1.4;color:#087b56;background:#dcfce7;border-radius:7px;padding:9px}
+.contact-feedback.error{color:#b91c1c;background:#fee2e2}
+@media(max-width:1100px){
+  .crm-workspace .crm-grid{grid-template-columns:minmax(250px,300px) minmax(0,1fr);position:relative}
+  .crm-workspace .contact-panel{display:none;position:absolute;z-index:6;right:0;top:0;bottom:0;width:min(370px,100%);background:#fff;box-shadow:-12px 0 28px #363a3128}
+  .crm-workspace .contact-panel.is-open{display:block}
+  .contact-toggle,.contact-close{display:inline-block;border:1px solid #e2d6ca;border-radius:7px;background:#fff;color:#c25b40;font-size:12px;font-weight:700;padding:7px}
+}
+@media(max-width:800px){.crm-workspace{height:100dvh}.crm-workspace .crm-grid{margin:0 12px 12px}}
+@media(max-width:700px){
+  .crm-workspace .topbar{height:56px}
+  .crm-workspace .metrics{display:none}
+  .crm-workspace .crm-grid{display:block;margin:0;border-radius:0;position:relative}
+  .crm-workspace .inbox{height:100%}
+  .crm-workspace .conversation-list{max-height:none}
+  .crm-workspace .chat{display:none;height:100%}
+  .crm-workspace.mobile-chat-open .inbox{display:none}
+  .crm-workspace.mobile-chat-open .chat{display:flex}
+  .chat-back{display:inline-block;border:0;background:transparent;font-size:21px;color:#c25b40}
+  .crm-workspace .chat-header{flex-wrap:wrap;padding:10px}
+  .crm-workspace .mode-control{order:3;width:100%;justify-content:flex-end}
+  .crm-workspace .contact-panel{width:100%}
+  .crm-workspace .messages{padding:14px}
+  .crm-workspace .bubble{max-width:88%}
+}
